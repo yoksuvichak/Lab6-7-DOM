@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function change_color(){
+        setTimeout(() =>{
+            var a = document.getElementById("name");
+            var b = document.getElementById("age");
+            var c = document.getElementById("birthdate");
+
+            if(a.value != ''){
+            a.style.color ="Green";
+            }
+            if(b.value != ''){
+            b.style.color ="Green";
+            }
+            if(c.value != ''){
+            c.style.color ="Green";
+            }
+        },2000);
+
+    }
+</script> 
+<body>
+    <h1>Register</h1></p>
+    ชื่อ: <input type="text" id="name" onmouseout="change_color()"><br>
+    Age: <input type="text" id="age" onmouseout="change_color()"><br>
+    Birthdate: <input type="text" id="birthdate" onmouseout="change_color()">
+</body>
+</html>
